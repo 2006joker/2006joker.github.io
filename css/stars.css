@@ -1,0 +1,20 @@
+/* 星空背景 */
+body {
+    background: linear-gradient(135deg, #0a0a1f 0%, #1a1a40 100%) fixed;
+    color: #e0e0e0;
+    min-height: 100vh;
+}
+
+/* 毛玻璃效果 */
+#content-inner, .card, .post-content {
+    background: rgba(20, 20, 40, 0.85) !important;
+    backdrop-filter: blur(10px);
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+    body { background: #0a0a1f; }
+    .card { backdrop-filter: none; }
+}
